@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "4fcf974d-58b7-453c-8d56-afb31e09bb76",
+		"name": "VacunacionEmpleado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19134109"
+	},
+	"item": [
+		{
+			"name": "consulta de todos los empleados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/empleados",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Empleado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n   \"cedula\":\"6557545\",\n   \"nombres\":\"Jose Carlos\",\n   \"apellidos\":\"franco\",\n   \"correo\":\"franco@gmail.com\",\n   \"fechaNacimiento\":\"\",\n   \"direccion\":\"\",\n   \"telefono\":\"\",\n   \"usuario\":\"\",\n   \"password\":\"\",\n   \"vacunacion\":{\n      \n      \"fechaVacunacion\":\"\",\n      \"numeroDosis\":\"\",\n      \"tipoVacuna\":\"NINGUNA\",\n      \"EstadoVacunacion\":\"NO_VACUNADO\"\n   }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8001/empleados",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consulta de empleado por cedula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/empleados/6557545",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"empleados",
+						"6557545"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
