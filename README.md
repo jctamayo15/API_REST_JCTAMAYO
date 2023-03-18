@@ -24,6 +24,6 @@ MVC -> Separación y Representación de los Datos, Manejo de errores, Escalabili
    - Descargar el fuente de la rama master (git pull)
    - Importar el proyecto en el IDE
    - Click derecho sobre el proyecto y seleccionar Run ass -> Spring Boot App
-   - Se podra encontrar los endpoints y ejemplos del request en la url http://localhost:8001/swagger-ui.html
+   - Se podra encontrar los endpoints y ejemplos del request en la coleccion de postman https://github.com/jctamayo15/API_REST_JCTAMAYO/tree/main/vacunacion-empleados/doc
    - Se deberan crear los empleados, ya que no contiene registros inicialmente.
    - Si detiene el microservicio, se eliminara toda la informacion en la base de datos db_empleados_cloud
